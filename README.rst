@@ -15,7 +15,7 @@ PyMySQL
 .. contents:: Table of Contents
    :local:
 
-This package contains a pure-Python MySQL client library, based on `PEP 249`_.
+This package contains a pure-Python MySQL client library, based on `PEP 249`_  with backported `_auth.scramble_old_password` function for compatibility with previous versions of MySQL and MariaDB.
 
 Most public APIs are compatible with mysqlclient and MySQLdb.
 
