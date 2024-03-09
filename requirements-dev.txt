@@ -1,3 +1,4 @@
-cryptography
+cryptography<40.0.0; python_version <= '3.7' and platform_python_implementation == 'PyPy'
+cryptography; platform_python_implementation != 'PyPy'
 PyNaCl>=1.4.0
 pytest
