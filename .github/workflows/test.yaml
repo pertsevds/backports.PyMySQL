@@ -10,26 +10,30 @@ jobs:
     strategy:
       matrix:
         include:
-          - db: "mariadb:10.0"
-            py: "3.9"
-
+          # I only care about Debian Buster
+          # Like in Debian Buster
           - db: "mariadb:10.3"
-            py: "3.8"
-            mariadb_auth: true
-
-          - db: "mariadb:10.5"
             py: "3.7"
             mariadb_auth: true
 
-          - db: "mysql:5.6"
-            py: "3.6"
+          # Like in Debian Bullseye
+          # - db: "mariadb:10.5"
+          #   py: "3.9"
+          #   mariadb_auth: true
 
-          - db: "mysql:5.7"
-            py: "pypy-3.6"
+          # Like in Debian Bookworm
+          # - db: "mariadb:10.11"
+          #   py: "3.11"
 
-          - db: "mysql:8.0"
-            py: "3.9"
-            mysql_auth: true
+          # - db: "mysql:5.6"
+          #   py: "3.6"
+
+          # - db: "mysql:5.7"
+          #   py: "pypy-3.6"
+
+          # - db: "mysql:8.0"
+          #   py: "3.9"
+          #   mysql_auth: true
 
     services:
       mysql:
