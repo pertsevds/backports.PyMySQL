@@ -13,11 +13,11 @@ jobs:
           - db: "mariadb:10.0"
             py: "3.9"
 
-          - db: "mariadb:10.3"
+          - db: "mariadb:10.5"
             py: "3.8"
             mariadb_auth: true
 
-          - db: "mariadb:10.5"
+          - db: "mariadb:10.3"
             py: "3.7"
             mariadb_auth: true
 
