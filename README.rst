@@ -1,15 +1,4 @@
-.. image:: https://readthedocs.org/projects/pymysql/badge/?version=latest
-    :target: https://pymysql.readthedocs.io/
-    :alt: Documentation Status
-
-.. image:: https://coveralls.io/repos/PyMySQL/PyMySQL/badge.svg?branch=master&service=github
-    :target: https://coveralls.io/github/PyMySQL/PyMySQL?branch=master
-
-.. image:: https://img.shields.io/lgtm/grade/python/g/PyMySQL/PyMySQL.svg?logo=lgtm&logoWidth=18
-    :target: https://lgtm.com/projects/g/PyMySQL/PyMySQL/context:python
-
-
-PyMySQL
+Backports.PyMySQL
 =======
 
 .. contents:: Table of Contents
