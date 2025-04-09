@@ -1,6 +1,6 @@
 """Test for auth methods supported by MariaDB 10.3+"""
 
-import pymysql
+import backports.pymysql
 
 # pymysql.connections.DEBUG = True
 # pymysql._auth.DEBUG = True

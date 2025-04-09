@@ -7,9 +7,9 @@ with open("./README.rst", encoding="utf-8") as f:
     readme = f.read()
 
 setup(
-    name="backports_PyMySQL",
+    name="backports.PyMySQL",
     version=version,
-    url="https://github.com/pertsevds/backports_PyMySQL",
+    url="https://github.com/pertsevds/backports.PyMySQL",
     project_urls={
         "Documentation": "https://pymysql.readthedocs.io/",
     },
