@@ -1,5 +1,5 @@
-cryptography<=40.0.0; python_version <= '3.6' and platform_python_implementation != 'PyPy'
-cryptography<=44.0.2; python_version <= '3.7' and platform_python_implementation == 'PyPy'
+cryptography<=40.0.2; python_version <= '3.6' and platform_python_implementation != 'PyPy'
+cryptography<=40.0.2; python_version <= '3.7' and platform_python_implementation == 'PyPy'
 cryptography>=42.0.2; python_version > '3.6' and platform_python_implementation != 'PyPy'
 PyNaCl>=1.4.0
 pytest
