@@ -17,6 +17,10 @@ setup(
     long_description=readme,
     packages=find_packages(exclude=["tests*", "pymysql.tests*"]),
     python_requires=">=3.6",
+    extras_require={
+        "rsa": ["cryptography"],
+        "ed25519": ["PyNaCl>=1.4.0"],
+    },
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Programming Language :: Python :: 3",
