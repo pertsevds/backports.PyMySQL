@@ -10,6 +10,6 @@
 /build
 /dist
 /docs/build
-/pymysql/tests/databases.json
+backports/pymysql/tests/databases.json
 __pycache__
 Pipfile.lock

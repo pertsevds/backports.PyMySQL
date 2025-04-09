@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-import pymysql
+
+from backports import pymysql
 
 conn = pymysql.connect(host="localhost", port=3306, user="root", passwd="", db="mysql")
 
