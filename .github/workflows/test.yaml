@@ -70,23 +70,3 @@ jobs:
           mysql -uroot -h127.0.0.1 -sNe "SELECT CONCAT('CREATE USER nopass_ed25519 IDENTIFIED VIA ed25519 USING \"',ed25519_password(\"\"),'\";');" | mysql -uroot -h127.0.0.1
           mysql -uroot -h127.0.0.1 -sNe "SELECT CONCAT('CREATE USER user_ed25519 IDENTIFIED VIA ed25519 USING \"',ed25519_password(\"pass_ed25519\"),'\";');" | mysql -uroot -h127.0.0.1
           pytest -v --cov --cov-config .coveragerc tests/test_mariadb_auth.py
-
-      - name: Report coverage
-        run: coveralls
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          COVERALLS_FLAG_NAME: ${{ matrix.test-name }}
-          COVERALLS_PARALLEL: true
-
-  coveralls:
-    name: Finish coveralls
-    runs-on: ubuntu-latest
-    needs: test
-    container: python:3-slim
-    steps:
-    - name: Finished
-      run: |
-        pip3 install --upgrade coveralls
-        coveralls --finish
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
