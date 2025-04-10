@@ -7,16 +7,16 @@ with open("./README.rst", encoding="utf-8") as f:
     readme = f.read()
 
 setup(
-    name="backports.PyMySQL",
+    name="backports_3_7.PyMySQL",
     version=version,
-    url="https://github.com/pertsevds/backports.PyMySQL",
+    url="https://github.com/pertsevds/backports_3_7.PyMySQL",
     project_urls={
         "Documentation": "https://pymysql.readthedocs.io/",
     },
     description="Pure Python MySQL Driver",
     long_description=readme,
     package_dir={'': 'src'},
-    packages=find_namespace_packages(where='src',exclude=["backports.pymysql.tests*"]),
+    packages=find_namespace_packages(where='src',exclude=["backports_3_7.pymysql.tests*"]),
     python_requires=">=3.6",
     extras_require={
         "rsa": ["cryptography"],

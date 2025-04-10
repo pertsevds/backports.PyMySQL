@@ -2,7 +2,7 @@
 
 import os
 
-from backports import pymysql
+from backports_3_7 import pymysql
 
 # pymysql.connections.DEBUG = True
 # pymysql._auth.DEBUG = True
