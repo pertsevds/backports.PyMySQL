@@ -1,1 +1,3 @@
 include README.rst LICENSE CHANGELOG.md
+exclude tests/*
+prune tests

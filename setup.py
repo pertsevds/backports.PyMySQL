@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from setuptools import find_packages, setup
+from setuptools import setup, find_namespace_packages
 
 version = "1.0.2"
 
@@ -15,7 +15,8 @@ setup(
     },
     description="Pure Python MySQL Driver",
     long_description=readme,
-    packages=find_packages(exclude=["tests*", "pymysql.tests*"]),
+    package_dir={'': 'src'},
+    packages=find_namespace_packages(where='src',exclude=["backports.pymysql.tests*"]),
     python_requires=">=3.6",
     extras_require={
         "rsa": ["cryptography"],
