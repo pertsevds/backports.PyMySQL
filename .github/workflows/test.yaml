@@ -58,7 +58,7 @@ jobs:
 
       - name: Run test
         run: |
-          pytest -v --cov --cov-config .coveragerc backports_3_7/pymysql
+          pytest -v --cov --cov-config .coveragerc src/backports_3_7/pymysql
 
       - name: Run MariaDB auth test
         if: ${{ matrix.mariadb_auth }}
