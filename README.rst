@@ -1,4 +1,4 @@
-Backports.PyMySQL
+Backports_3_7.PyMySQL
 =======
 
 .. contents:: Table of Contents

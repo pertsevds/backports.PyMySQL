@@ -1,9 +1,9 @@
 [run]
 branch = True
 source =
-    backports/pymysql
-omit = backports/pymysql/tests/*
-       backports/pymysql/tests/thirdparty/test_MySQLdb/*
+    backports_3_7/pymysql
+omit = backports_3_7/pymysql/tests/*
+       backports_3_7/pymysql/tests/thirdparty/test_MySQLdb/*
 
 [report]
 exclude_lines =
